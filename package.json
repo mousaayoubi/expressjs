@@ -1,0 +1,15 @@
+{
+  "name": "expressjs",
+  "version": "1.0.0",
+  "description": "App using expressjs",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mousa Ayoubi",
+  "license": "ISC",
+  "dependencies": {
+    "express": "*",
+    "body-parser": "*"
+  }
+}
