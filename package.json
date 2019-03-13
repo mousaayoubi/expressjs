@@ -9,7 +9,8 @@
   "author": "Mousa Ayoubi",
   "license": "ISC",
   "dependencies": {
-    "express": "*",
-    "body-parser": "*"
+    "body-parser": "*",
+    "ejs": "^2.6.1",
+    "express": "*"
   }
 }

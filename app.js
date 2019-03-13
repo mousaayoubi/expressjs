@@ -7,17 +7,25 @@ var port = "3000";
 var app = express();
 
 app.use(function(request, response, next) {
-  console.log("Time is " + Date.now());
+  console.log("Time now is " + Date.now());
   next();
 });
+
 app.use(express.static(path.join(__dirname, "public")));
 
+app.set("view engine", "ejs");
+app.set(path.join(__dirname, "views"));
+
 app.get("/", function(request, response) {
-  response.send("hi world");
+  response.render("index");
 });
 
 app.get("/about", function(request, response) {
-  response.send("About Page");
+  response.render("about");
+});
+
+app.get("/contact", function(request, response) {
+  response.render("contact");
 });
 
 app.listen(port, function() {
